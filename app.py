@@ -404,7 +404,9 @@ def admin_page():
                 i_threshold = st.number_input("预警阈值", min_value=1, value=50)
                 if st.form_submit_button("添加") and i_name:
                     st.success(f"原材料「{i_name}」入库成功！")
-
+                                insert into inventory (ingredent_id.stuct_num)
+                valuse
+                on duplicate key update stock_num=stock_num+ 
     elif menu == "📋 订单处理":
         st.header("📋 订单处理")
         admin_dishes_fno = dishes[dishes['Wno'].isin(admin_windows)]['Fno'].tolist()
